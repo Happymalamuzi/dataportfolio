@@ -1,0 +1,140 @@
+/* src/styles/Hero.css */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(52, 152, 219, 0.8), rgba(46, 204, 113, 0.8)), url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .hello {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease-in-out 0.5s;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-in-out 1s;
+  }
+
+ /* src/styles/Hero.css */
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: fadeInUp 1s ease-in-out 1.5s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .btn:hover {
+    background-color: #c0392b;
+  }
+  .hero-image {
+    max-width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: fadeInRight 1s ease-in-out;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-text {
+      text-align: center;
+    }
+  
+    .hello {
+      font-size: 3rem;
+    }
+  
+    .name {
+      font-size: 2rem;
+    }
+  
+    .hero-image {
+      max-width: 300px;
+    }
+  }
+  
